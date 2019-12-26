@@ -1,10 +1,6 @@
 spring:
   application:
     name: kim-Eureka
-  boot:
-    admin:
-      client:
-        url: http://192.168.0.104:8084
 
 server:
   port: 8761

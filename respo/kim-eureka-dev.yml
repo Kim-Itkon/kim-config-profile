@@ -5,6 +5,10 @@ spring:
 server:
   port: 8761
 eureka:
+  instance:
+    hostname:192.168.75.137
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://192.168.42.128:${server.port}/eureka/,http://192.168.42.128:${server.port}/eureka/,http://192.168.42.128:${server.port}/eureka/
